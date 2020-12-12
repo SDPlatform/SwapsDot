@@ -1,0 +1,51 @@
+{
+  "name": "@Swapsdot/governance",
+  "version": "1.0.2",
+  "description": "🏛 Governance contracts for the Swapsdot protocol",
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "files": [
+    "contracts",
+    "build"
+  ],
+  "scripts": {
+    "precompile": "rimraf ./build/",
+    "compile": "waffle",
+    "pretest": "yarn compile",
+    "test": "mocha",
+    "lint": "prettier ./test/**/*.ts --check",
+    "prepublishOnly": "yarn test"
+  },
+  "devDependencies": {
+    "@Swapsdot/v2-core": "^1.0.1",
+    "@types/chai": "^4.2.12",
+    "@types/mocha": "^8.0.3",
+    "chai": "^4.2.0",
+    "ethereum-waffle": "^3.1.0",
+    "ethereumjs-util": "^7.0.4",
+    "mocha": "^8.1.3",
+    "prettier": "^2.1.1",
+    "rimraf": "^3.0.2",
+    "solc": "0.5.16",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    
+  },
+  "keywords": [
+    "Swapsdot",
+    "ethereum",
+    "governance",
+    "elt"
+  ],
+  "bugs": {
+    
+  },
+  "homepage": "https://Swapsdot.com"
+}
